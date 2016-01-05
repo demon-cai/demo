@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .imgctn{
+            position: relative;
+            width: 540px;
+            height: 258px;
+            overflow: hidden;
+            background-color: red;
+        }
+        .imgctn:hover .Magnifier{
+            display: block;
+        }
+        .Magnifier{
+            position: absolute;
+            display: none;
+            text-indent: -9999px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBODk2NDlENDlGM0NFNTExODY4Qzg4NTQzMDk5Q0E0NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0NDc2RDBDMDRCRDAxMUU1OTMwMkI2QTRFNUU1NDNGQSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0NDc2RDBCRjRCRDAxMUU1OTMwMkI2QTRFNUU1NDNGQSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU3NEI3NzJGRDA0QkU1MTE4MEE3OEZCMEVBMkYyOThDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkE4OTY0OUQ0OUYzQ0U1MTE4NjhDODg1NDMwOTlDQTQ3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+G5xJ2AAAAoNJREFUeNq8lm9oTXEYx39nu7NL+Ve0LQktYck71pTCK6VM7R1NXvg7rTVl86c08j9Z+Zt4I4qipLxACaGIYsWLaUby/wVC2HCOz3Puc+ece39397rn2lOfdtc5z/P9Pef3PM/v53ieZ/63xUz3zcJHlXUPGW5MxTT/X8dbk9VlHJRDHHrgPXT36yFvTa02pumOZlJqfW0kLIalUAWDA896oRNOwQl4Z41Q8telyPJ4ATyAA/4ijGmHOpgLC2EHfIfd8AiWZN+TsDXDPnWeB5ctPhdgC8yCXZqNZLs+k0gwk+UqcAZqMggETSpmDhyBVtiULZMpcFgD18OvHOtI9qcBhsI2uAU3bJk40AY/YMU/CAStEV7CHssW+CLToRb2w4s8O+MT7IQZUG0TqddsTkdsQSmIb7rgNJFaba6uiCKvNMZMm8hY+KB7YgogNCpTCXsFnFrWPnkLI6C0ACIVWgRpIhdhAoyPKFAGlXDXJnJSs6iLKCJjaJhWWZrIbbikc2t0ngJxHSuPtevTRH7DZq2KQ3mKyKCcqDOsNxG5uO9hcVuN//eNju8m/bZXwM1RYCu0wHY4GjoZyyYb8/E5J+PakIOcFRvgOqyD+/0Er9L3pZmP6UFWrtm4/hJ/2s+TjfAU9sI9uArnoUMzjevElsDztYEbdXo/0RikYFaxEW6yKVIzSdoYWAmLtCxTTQbpOTgIz1S83Q+esOPq7+ZykRgEk1RUVvhF969Th2GidEr6fono6lQhx+u6Fq07Xj805mxzUsjRCg0KNcRM5exoInIrcUOzK/ltRGiZDN9Y5GnV8zVxzzJpQo6etJ+dyNfU8OcKmnSjXCE7nIG4CxeZAbA/AgwAjbaZJSPJ1RIAAAAASUVORK5CYII=);
+            bottom: 0px;
+            right: 0;
+            width: 32px;
+            height: 32px;
+            background-color: rgba(0,0,0,.5);
+            background-repeat: no-repeat;
+            background-position: 3px;
+            border-top-left-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgctn">
+        <img  class="smallImg" src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png" alt="百度图片">
+        <span class="Magnifier" >放大镜</span>
+    </div>
+</body>
+</html>
