@@ -1,4 +1,5 @@
 //Basic Type
+var iiOpen: boolean = true;
 var isDone: boolean = false;
 var height: number = 6;
 var name: string = "demo";
